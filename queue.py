@@ -1,4 +1,4 @@
-class Query:
+class Queue:
 
     def __init__(self):
         self.__list = []
@@ -17,7 +17,11 @@ class Query:
     def __len__(self):
         return len(self.__list)
 
-que = Query()
+    def is_empty(self):
+        return len(self.__list) == 0
+
+"""
+que = Queue()
 que.enqueue(1)
 que.enqueue(2)
 que.enqueue(3)
@@ -26,3 +30,4 @@ print(que.front())
 que.dequeue()
 print(que.front())
 print(len(que))
+"""

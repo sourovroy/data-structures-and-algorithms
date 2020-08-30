@@ -17,7 +17,10 @@ class Stack:
     def __len__(self):
         return len(self.__list)
 
+    def is_empty(self):
+        return len(self.__list) == 0
 
+"""
 stack = Stack()
 
 stack.push(3)
@@ -28,3 +31,4 @@ print( len(stack) )
 stack.pop()
 print( stack.peek() )
 print( len(stack) )
+"""
